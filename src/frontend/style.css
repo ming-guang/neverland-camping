@@ -1,30 +1,32 @@
 /* all  */
 * {
     margin:0;
-    padding:0;
+    padding:0; 
     font-family: 'Playpen Sans', cursive;
 }
 .header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEhUPEhAVFRUQFRUPFRUPFRUPFRUVFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGi0lHSUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAABAwACBAUGBwj/xAA4EAACAgECBQIEAwYFBQAAAAAAAQIDEQQSBRMhMVFBYQZxgZEUIlIyQqHB0fAHIzPh8RVicoKi/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAIhEBAQEBAAICAgIDAAAAAAAAAAERAgMSEyExUUGRYXGh/9oADAMBAAIRAxEAPwD4qEgUigougJFkVBQURBQECiBCCEAUUEIAhEKssBhS2AMipFEKAWQFkMiLQxFRfIdwEBlRbcWUxJMkwaFMtvMymWUyYNUZjY2GKMhsZmcRtVo2FhgjMbCZMWRvjMbuMcJGjcG4E2Z5yGykZrGRSbZGaxl7ZGacjUBkxLYXIW2VGZFkiJFkioKLICLICBAWAgQFkEEIAgEhCFRAMIGRS2AMgBUQUAsgLIuiiLoqUxAYYgYZVAEAUCEIwIpDIzFFkFPUhtcjIpDITJg31zNCkYapGjcZahkpCLCzkLkyNMt5jsZsuMdqLGaXkhAGkURZFUi6AKCAIBCAIRAoAUFWIQgQQ5AQCEZAMCkgFpFQqIKAgoC6LxKIuiougMKA0EBgCwMAEYQYCgiyBgskAAxC0GKAbSzVkyxQ6LM1qLNlWyMGDLRdhltRrmjNahGWeSKDpRFOJqCiLIiRdIICCWUQqJUVwHBfaFRBqmCJDFEKgDS8B2jdodgTSsEwNUSyiDScAaH7CbAazSiDaaHAGwhpCgFRHqAVAGlKJeMRigWUCpqiiTaOUA7Aaz7SbTRsByxoRtJsH7A7BprOoFlAcoF1AGs+00aDh9l0lXVCU5P0is/fwel+CfhCziNu1flqh1nPx7L3PtHCeB0aNcrT1peZfvP3bMd9zk18n03+F2rlFSc64t94yz+X6ruDjH+HVumolfzozcOrhCL6r2fk+zzfou3qxV9iivY5Ty02vzU4dcP7FnE+6fE/CefprE647pxfLjiKk5ejy+x8Z13DLqHttrlD/wAl0+j7M6S+01udOZZEzzgbpxEygUtY3AXKBscBbgU1jSLqIYoZGJWdVUSyiXUSyiTWdL2ltoxRLKINLUQqI1QLbRppO0KiOUQ7Qmk7A7B20KiNNJ2h2DlEO0Gs+wHLNG0m0mmkKBZQHbCygU0hQLKA5RLxiDSdgdg7aFxKms+wnLH7Q7SGkcsPLH7Q7ShCrOp8PcCs1t8dPWusurb7Rj6yZmooc5KEU3KTwkurbPrfwbwj/ptTlLDvvSTS6uK9Iox336zVn3Xp+F6KrQ0x0lK/ZX5perfq2O5ix+X16Z9W/CF6elQjvtTzPr7Jd+r9CK3mPFfp0cvSK8I8fltmWu3H2Mnj8qWZP0Xp/QXZZGvq8Tn/APMQW2KCai8L96b7y+XsZqaJ2vEE0vL/AL6El/f9JZ+mbWalt5k8yfov76Hlfji2EKHXbL/Msw4QXXGGnl+D2lzro6RalPz3S/qzg8SUb042repd1Lr9U/Rnp4/O1z2T8PjsoCpQPR8d4BKj86eYN46/tRz2T/qcRwOzWskoCnE2TiIcSYa50YjYxDCI2MAxqiiWUBqiXUSM6Sol1EbsLqBU9iVAtsHKBZQB7EKIVEfsIqwnsRtDtHqAVWD2IUQ7R6gW5ZT2ZthOWalWFVg9ozKBZVmlVllWE92blhVZrVZZVg9mRVk2G3lgdYPZk5ZOWauWMo00pyUIQlKT7RgnKT+SXUHswqA/SaKdslXXBylLsorLN1vCLo3x0jrfOsSfLTUpRT6pzSb29OuH19j6JwDhFfDap2Te+62Ma14Sl1ax9F7sx33OXTjjrofgb4ZWmr5s2nba9qxhuKXdRf8AM9JOFGnbsm90/d5wci6MVFTstakuqhV0fXsn4XsvucK/Q32NvMmn2z3+py569vv+W+5n06PE+MO6eM9H2SNOio2TdnMlZKSUYwy1Cter8Zf8jn8O4TKCdk/TyL0+ghfCcNRZLCsU4ctpSxjrF9MKJPJLm24zxft6mMYxSnbLc/SMOq/oI1fEpyWF+SPiPT7v1MFN0ZYrq24isKMWniK9hmyC6zln2XU8/P1+J/bvftmnLPbqH8HN9Wtq8voaHrdv+nFL3a3P/Yx33Tl1bb+bO/N/dYs/TzvxpTKNSUU5R3JynHsvZrv9Tw7gfTNTNYal1TTyn1WPc+famC3NR7ZePl6Ho46ljl1sc+cBUqzZOAtwNprl1wHQrGwqNEKjLnemZVjI1myNRdVBj3Y41F1UbFUMjSGfdiVRbkm/kF40hPkc7lBVR0eQiypXgmp8jmKotyjp8j2LKganyOZyfYKpOnyAqkafK5qoLKg6SpIqhqfKwKgsqDeqg8sanysKoL8k1qBbYNT5GPkk5Js2k2EPkZK9O5NJLLbSS8t9j6t8PUafhunlJJO3a52T9W0s7U/SK8HzrRvZOM3+69327GzWcYc4yjnpJOL+vQ1K9Hg6n5eU/wAOeLTs1tusnZiyb3ym8yadrk5NfZI+mS1n+XKVe+TeJtvEpNeYo+G/Deo/Dahwfrmt58p9P5/c+lU8SlsS5kYxTUNixH8mO8X7eOhw8s3r7fQ36djTTnCM3ZPrnMH6yi+uGvRp9Poa9P8AE+I7eVlr17I85+IiuVmyLcd/Mxn82f2cfIOovi+kM/YzzbK5eb7+5jr67jdtvTOF4Qjhks2LdLC9ffPocZWS8MfRqNrTa7PJq/bzy3dek4dDT0Jwqmsyf5m2tz9vl7G2CTOfwWGma3Ye9/qa/gdmW3HSB5+p9/zXs8d+v4jNNpe/yMuotl2il9fQ1ybX7qM9s5f8I6cT/DPd/wAs11KnBwksuSxldMe6PD6vRuEnB908Hrtfr3Wuu7r26dMnmr5uTcn3fU9MteTy9yfhy51CnWjdaZ2b1nnpgrRoikIrgbK6wxUiNUfYMax8ayOfVUjD2GRqG1fJr5jFEjlbSlWHlseoF4wIz7UhR9iyj7DlWX5YTazkwO5fsWjFLvHP3/kE0hIOBzSDFf32Im1WqbSxgW0PcUFIp7Vn2hjE0+fcrgiexWwiRdx9i0W08pR/9kpfwfQEpawHCHSteGsQ6+K4J/RpZQrb7gtn8VScMrHk4V1kq24y/wCV5R3m2YOI0OyO1xi/nlY+TXUsdvD5PW/f4eI4/p8z50PXG7HfK7SNfC+OJrE1HK/Vn7rqaL/h3UN9Jxx75GaDg0qnudFU5fqm5P7LsWyWfb6fPn4k/Ou5wziW/tVGX/dsl0Xzz1O6tXDb0UPG3E44flNnCjrL0v8ASj8o5SA+JXetP8Tn8ccuvN5P1M/26WttlHGHGWev5X1XzMv4ryjJLic/Wp/QXZxRPvWzU5ZnfV/PP/Xqfhv4hjpZuUo5UunXqe14b8T0ah7Y4Tfp2Pi8tdD9EkGjimySlFSTRL45Xp8fk9Y+zcRtw/2fsce3Vrw/szwtHxdcn1ba9zRL4ssksbTM4Xvy/p0+McQVi2JdE85Zx5mWXEE/RlHr14Z0x4Ovbq7TZoyz7klrU/RiJXrwzUb5li9RqqQumk11UFY71aA6LRevTDlpSOF0pMsjTDRjVpCMWVlgi6iao6UL0+CMWVmUQI0uonLGJrI2y6HSqKqsL+S8EwOUQqJEsJ2lkPjWXVOS4zlZUi6ialpi60xF9KxSQHE3fhCy0hcPj6c7YR1nRekKPTDC82MLrKco3Ogq6BhlYOWTko2ugHKIaycpFJVI28oDpC+9xglQUenXhHQdRV1DDa50tLD9KKfgofpR0ZUlOUG5b+2D8HDwB6SPg6UaMjFow3Ouv25H4aPgXOmPg7L0IqzRIrcvTi2VrwZpYOxdpEc+zTdTUduVKb0bKbkcSmRsqZqxrqO7VekPWoRx62aYsmPP069WoQ38QjkRYyMiY5211OegO9GGLLIjFtat+SZEplkwxTMgyQhCXEIiEwC3TIj4SRlRE2UnWN6sRaFiOdlhyGvkdTmIjsRzNxHINfM6Luj5Ku1HOyTcwzfK3OxFZTRj3Mm4azez3JAchGQOQ1N0/cgOSM7mUlImrK0too5IzuRXcFam0UeDO7CkrGGpW+EkOViOO7X5KSufkY6SuxO5GezURORO5me29iR1ldHUaheTm2XLJjuvfkxyuZt25KokbqpEIaa6bapGqDIQjz9HRYyJCEcsNiXiyEI5VeLLpkIXEqyYckISxlZMhCERMAIQiIgkIVQyFsBCIhEQgMTICEGCFWQhcVRlQEGNRVsq2QhGlJMo2QgjUUkxU5EIG4z2SMlsgkNR24jFdMxzn1IQr0cP/9k=);
-    background-position: center;
-    background-size: cover;
+    /* min-height: 100vh; */
+    /* width: 100%; */
+    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(neverland-img/banner.png); */
+    /* background-position: center; */
+    /* background-size: cover; */
     position: relative;
 }
 nav {
     display: flex;
-    padding: 2% 6%;
+    padding: 1% 6%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
-nav img{
+nav img {
     position: absolute;
     top: 0;
     left: 0;
-    padding-bottom: 30px;
-    height: 170px;
-    width: 200px;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
 }
 .nav-links {
     flex: 1;
@@ -33,11 +35,12 @@ nav img{
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 40px 12px 0 12px;
+    padding: 10px 12px 0 12px;
+    text-align: center;
     position: relative;
 }
 .nav-links ul li a {
-    color: #fff;
+    color: #0b0909;
     text-decoration: none;
     font-size: 20px;
 }
@@ -52,6 +55,21 @@ nav img{
 }
 .nav-links ul li:hover::after{
     width: 100%;
+}
+#slider {
+    width: 100%;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption h4 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.carousel-inner img{
+    max-width: 100%;
 }
 .text-box{
     width: 90%;
@@ -72,7 +90,8 @@ nav img{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #a9a1a1;
+    border-radius: 10px;
     padding: 12px 34px;
     margin-top: 12px;
     font-size: 15px;
@@ -82,10 +101,20 @@ nav img{
 }
 .hero-btn:hover {
     border: 1px solid #11df97;
-    background: #11df97;
+    background: #c2eedf;
     transition: 1s;
 }
+.sub-header h1{
+    margin-top: 60px;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(neverland-img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 200px 0;
+    margin-top: 10px;
 
+}
 /* Courses */
 .Courses{
     width: 80%;
@@ -244,7 +273,7 @@ h3{
 .Enroll {
     margin: 50px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/banner2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(neverland-img/banner2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -261,12 +290,169 @@ h3{
 .footer{
     width: 100%;
     text-align: center;
+    margin-top: 20px;
     padding: 30px 0;
+    z-index: 9999;
 }
 .footer h4 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+    
 }
 
 
+/* ABOUT US PAGE */
+
+.aboutUs{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.aboutUs-Col {
+    flex-basis: 48%;
+    align-items: center;
+    padding: 30px 7px;
+}
+.aboutUs-Col img {
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.aboutUs-Col img:hover{
+    width: 85%;
+    box-shadow: 0 0 20px 0px rgba(29, 18, 18, 0.2);
+}
+.aboutUs-Col h1 {
+    padding-top: 0;
+}
+.aboutUs-Col p {
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid #090702;
+    background: transparent;
+    color:#090702;
+}
+
+/* tournament-content */
+.tournament-content {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+}
+.tournament-Col-left {
+    flex-basis: 75%;
+}
+.tournament-Col-left img {
+    width: 80%;
+}
+.tournament-Col-left h2{
+    color: #222;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+}
+.tournament-Col-right {
+    flex-basis: 35%;
+}
+.tournament-Col-right h3{
+    background: #043f27;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.tournament-Col-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #131202;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3 {
+    text-align: left;
+}
+.comment-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+.comment-form button {
+    margin: 10px 9;
+}
+
+/* contact us */
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe {
+    width: 100%;
+}
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fas, .fab{
+    font-size: 28px;
+    color: #043f27;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col h5 a{
+    list-style: none;
+    text-decoration: none;
+    color: #555;
+}
+.contact-col a:hover {
+    color: #043f27;
+    font-size: 23px;
+    transition: 0.5s;
+}
+.contact-col div p {
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.contact-col button hero-btn green-btn {
+    color: #555;
+}
