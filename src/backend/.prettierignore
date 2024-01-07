@@ -1,6 +1,0 @@
-# Ignore artifacts:
-.husky
-.output
-dist
-node_modules
-pnpm-lock.yaml
