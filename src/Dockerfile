@@ -1,19 +1,19 @@
-ARG  BUN_IMAGE=oven/bun:1.0.18
+ARG  BUN_IMAGE=oven/bun:1.0.20
 ARG  BUILDER_IMAGE=golang:1.22-rc-alpine3.18
 ARG  DISTROLESS_IMAGE=gcr.io/distroless/static
 
 ############################
 # STEP 1 build the docs page
 ############################
-FROM ${BUN_IMAGE} as docs-builder
+FROM ${BUN_IMAGE} as ui-builder
 
-WORKDIR /build/docs/
+WORKDIR /build/ui/
 
-COPY ./docs/ .
+COPY ./ui/ .
 
-RUN bun install --frozen-lockfile
+RUN bun install --frozen-lockfile --location=global
 
-RUN NODE_ENV=production bun run docs:build
+RUN bun run build-only
 
 ############################
 # STEP 2 build executable binary
@@ -37,12 +37,12 @@ RUN go mod verify
 COPY . .
 
 # Copy our pre-built document
-COPY --from=docs-builder /build/docs/dist ./docs/dist
+COPY --from=ui-builder /build/ui/dist ./ui/dist
 
 # Build the static binary
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build \
-	-ldflags='-w -s -extldflags "-static"' -a \
-	-o /go/bin/neverland-camping ./cmd/serve.go
+    -ldflags='-w -s -extldflags "-static"' -a \
+    -o /go/bin/neverland-camping ./cmd/serve.go
 
 ############################
 # STEP 3 build a small image
