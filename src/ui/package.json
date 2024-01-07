@@ -4,7 +4,7 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "prepare": "cd ../../ && husky install ./src/ui/.husky",
+    "prepare:dev": "cd ../../ && husky install ./src/ui/.husky",
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
