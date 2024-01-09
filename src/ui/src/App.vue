@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -8,13 +8,6 @@ import { RouterLink, RouterView } from 'vue-router'
       >{{ content ? `Neverland Camping - ${content}` : `Nevrland Camping` }}
     </template>
   </metainfo>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-    </div>
-  </header>
 
   <RouterView />
 </template>
