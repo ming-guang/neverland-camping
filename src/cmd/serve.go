@@ -11,6 +11,7 @@ import (
 
 	"github.com/ming-guang/neverland-camping/apis"
 	"github.com/ming-guang/neverland-camping/hooks"
+	_ "github.com/ming-guang/neverland-camping/migrations"
 	"github.com/ming-guang/neverland-camping/models"
 	"github.com/ming-guang/neverland-camping/services"
 )
