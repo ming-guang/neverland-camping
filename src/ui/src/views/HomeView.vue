@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import GlobalNavbar from '@/components/GlobalNavbar.vue'
 import WelcomeHero from '@/components/WelcomeHero.vue'
+import CoachesList from '@/components/CoachesList.vue'
+import CoachesListTitle from '@/components/CoachesListTitle.vue'
+import CoachesListLoading from '@/components/CoachesListLoading.vue'
 </script>
 
 <script lang="ts">
@@ -15,5 +18,14 @@ export default {
   <main>
     <GlobalNavbar />
     <WelcomeHero />
+    <div class="py-8 lg:py-16">
+      <CoachesListTitle />
+      <Suspense>
+        <CoachesList />
+        <template #fallback>
+          <CoachesListLoading />
+        </template>
+      </Suspense>
+    </div>
   </main>
 </template>
