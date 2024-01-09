@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import GlobalNavbar from '@/components/GlobalNavbar.vue'
-import WelcomeHero from '@/components/WelcomeHero.vue'
-import CoachesList from '@/components/CoachesList.vue'
-import CoachesListTitle from '@/components/CoachesListTitle.vue'
-import CoachesListLoading from '@/components/CoachesListLoading.vue'
-import CoursesLevelDescription from '@/components/CoursesLevelDescription.vue'
-import FinishedTournamentsListTitle from '@/components/FinishedTournamentsListTitle.vue'
-import FinishedTournamentsList from '@/components/FinishedTournamentsList.vue'
-import FinishedTournamentsListLoading from '@/components/FinishedTournamentsListLoading.vue'
-import UserReviewsListTitle from '@/components/UserReviewsListTitle.vue'
-import UserReviewsListLoading from '@/components/UserReviewsListLoading.vue'
-import UserReviewsList from '@/components/UserReviewsList.vue'
+import WelcomeHero from '@/components/HomePage/WelcomeHero.vue'
+import CoachesList from '@/components/HomePage/CoachesList.vue'
+import CoachesListTitle from '@/components/HomePage/CoachesListTitle.vue'
+import CoachesListLoading from '@/components/HomePage/CoachesListLoading.vue'
+import CoursesLevelDescription from '@/components/HomePage/CoursesLevelDescription.vue'
+import FinishedTournamentsListTitle from '@/components/HomePage/FinishedTournamentsListTitle.vue'
+import FinishedTournamentsList from '@/components/HomePage/FinishedTournamentsList.vue'
+import FinishedTournamentsListLoading from '@/components/HomePage/FinishedTournamentsListLoading.vue'
+import UserReviewsListTitle from '@/components/HomePage/UserReviewsListTitle.vue'
+import UserReviewsListLoading from '@/components/HomePage/UserReviewsListLoading.vue'
+import UserReviewsList from '@/components/HomePage/UserReviewsList.vue'
 </script>
 
 <script lang="ts">
