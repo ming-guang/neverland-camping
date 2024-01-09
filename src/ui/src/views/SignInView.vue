@@ -3,8 +3,8 @@ import GlobalNavbar from '@/components/GlobalNavbar.vue'
 import router from '@/router'
 import { pb } from '@/utils/ApiClient'
 import { ref } from 'vue'
-const showNotice = ref(false)
-const processing = ref(false)
+const showNotice = ref<boolean>(false)
+const processing = ref<boolean>(false)
 const identifier = ref<string>('')
 const password = ref<string>('')
 async function doLogin() {
