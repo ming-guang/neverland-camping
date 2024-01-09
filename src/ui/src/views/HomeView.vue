@@ -8,6 +8,9 @@ import CoursesLevelDescription from '@/components/CoursesLevelDescription.vue'
 import FinishedTournamentsListTitle from '@/components/FinishedTournamentsListTitle.vue'
 import FinishedTournamentsList from '@/components/FinishedTournamentsList.vue'
 import FinishedTournamentsListLoading from '@/components/FinishedTournamentsListLoading.vue'
+import UserReviewsListTitle from '@/components/UserReviewsListTitle.vue'
+import UserReviewsListLoading from '@/components/UserReviewsListLoading.vue'
+import UserReviewsList from '@/components/UserReviewsList.vue'
 </script>
 
 <script lang="ts">
@@ -40,6 +43,15 @@ export default {
         <FinishedTournamentsList />
         <template #fallback>
           <FinishedTournamentsListLoading />
+        </template>
+      </Suspense>
+    </div>
+    <div class="py-8 lg:py-16">
+      <UserReviewsListTitle />
+      <Suspense>
+        <UserReviewsList />
+        <template #fallback>
+          <UserReviewsListLoading />
         </template>
       </Suspense>
     </div>
