@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import GlobalNavbar from '@/components/GlobalNavbar.vue'
 </script>
 
 <script lang="ts">
@@ -12,6 +12,6 @@ export default {
 
 <template>
   <main>
-    <TheWelcome />
+    <GlobalNavbar />
   </main>
 </template>
