@@ -26,3 +26,4 @@ dist-ssr
 # Build files
 dist/*
 !dist/keep.txt
+!.env
