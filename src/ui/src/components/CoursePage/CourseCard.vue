@@ -16,7 +16,7 @@ async function doIsStudentCheck() {
     }
     const check = await pb.collection('courseStudents').getFirstListItem(`student.id="${pb.authStore.model!["id"]}" && course.id="${props.course.id}"`)
     if (check.id != "") {
-        courseUrl.value = `course/${props.course.id}`;
+        courseUrl.value = `course/${check.id}`;
         isStudent.value = true;
     }
 }
