@@ -7,11 +7,8 @@ const coaches = await pb.collection('users').getFullList({
 
 <template>
   <div class="grid grid-cols-2 gap-2 max-w-screen-xl px-4 mx-auto lg:gap-8 xl:gap-10">
-    <div
-      v-for="coach in coaches"
-      class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-      :key="coach.id"
-    >
+    <div v-for="coach in coaches"
+      class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" :key="coach.id">
       <a href="#">
         <img class="rounded-t-lg" :src="pb.files.getUrl(coach, coach.avatar)" alt="" />
       </a>
